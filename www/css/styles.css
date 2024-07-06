@@ -1,10 +1,10 @@
  /* Estilos para la sección activa del navbar */
  .active {
-     color: #3b82f6;
+     color: #115e59;
      /* Azul (blue-600) */
  }
 
  .active svg {
-     stroke: #3b82f6;
+     stroke: #115e59;
      /* Azul (blue-600) */
  }
