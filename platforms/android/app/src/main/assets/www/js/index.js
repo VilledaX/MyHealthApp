@@ -27,3 +27,18 @@ function onDeviceReady() {
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
     document.getElementById('deviceready').classList.add('ready');
 }
+
+
+function LoadPartialView(viewName, divClass = null){
+    $.ajax({
+        url: '/www/Views/' + viewName + '.html',
+        method: 'GET',
+        success: function (data){
+            $(divClass).html(data);
+        },
+        error: function(xhr, status, error){
+            console.error('Error al cargar la vista parcial: ', error);
+        }
+});
+
+}
