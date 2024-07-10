@@ -3,56 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Página de Información</title>
     <link rel="stylesheet" href="../css/tailstyles.css">
-    <link href="../css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-    <title>MyHealthPal</title>
-
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="font-haken bg-cream text-gray-900 mb-16">
-
-    <div class="container mx-auto p-4">
-        <h1 class="text-3xl font-bold  mb-8">Información y Conocimiento</h1>
+<body class="font-hanken bg-cream text-gray-900">
+    <div class="container mx-auto p-4 mb-16">
         
-        <!-- Sección de primeros auxilios -->
-        <h2 class="text-2xl font-semibold mb-4">Ritmo cardíaco</h2>
-        <div class="swiper-container">
-            <div class="swiper-wrapper mb-4" id="ritmo-cardiaco-wrapper">
-                
+        <div class="flex justify-center items-center mb-8">
+            <div class="flex items-center">
+                <div class="w-28 h-auto flex items-center justify-center">
+                    <img src="../Assets/f1.svg" alt="Heart Icon">
+                </div>
             </div>
         </div>
-
-         <!-- Sección de primeros auxilios -->
-         <h2 class="text-2xl font-semibold mb-4">Consejos de primeros auxilios</h2>
-         <div class="swiper-container">
-             <div class="swiper-wrapper mb-4" id="primeros-auxilios-wrapper">
-                 <!-- Aquí se insertarán las tarjetas de primeros auxilios -->
-             </div>
-         </div>
-         
-         <!-- Sección de primeros auxilios -->
-         <h2 class="text-2xl font-semibold mb-4">Estilo de Vida Saludable</h2>
-         <div class="swiper-container">
-             <div class="swiper-wrapper mb-4" id="estilo-vida-saludable-wrapper">
-                 <!-- Aquí se insertarán las tarjetas de primeros auxilios -->
-             </div>
-         </div>
-
-         <!-- Sección de Presión Arterial -->
-         <h2 class="text-2xl font-semibold mb-4">Presión Arterial</h2>
-         <div class="swiper-container">
-             <div class="swiper-wrapper mb-4" id="presion-arterial-wrapper">
-                 <!-- Aquí se insertarán las tarjetas de primeros auxilios -->
-             </div>
-         </div>
+        <div class="grid grid-cols-1 gap-4 p-4 bg-white rounded-lg shadow-md border-l-4 border-blue-500">
+            <h2 id="info-title" class="text-4xl font-bold text-blue-700 border-b-4 border-blue-500 mb-4 p-2">¿Qué es el ritmo cardíaco?</h2>
+            <div id="info-content" class="space-y-4 text-lg text-gray-700"></div>
+        </div>
+    </div>
 
     <nav class="fixed bottom-0 left-0 w-full bg-white shadow-md md:hidden">
         <div class="max-w-md mx-auto flex justify-around py-2">
-            
             <div onclick="location.href= 'home.html';" class="flex flex-col items-center text-gray-600 hover:text-violet-blue ">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
@@ -60,18 +33,17 @@
                 <span class="text-sm">Inicio</span>
             </div>
 
-            <a href="#" class="flex flex-col items-center text-black hover:text-violet-blue active">
+            <div onclick="location.href='article.html';" class="flex flex-col items-center text-black hover:text-violet-blue active">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
-                  </svg>
-                                   
+                </svg>                  
                 <span class="text-sm">Articulos</span>
-            </a>
+                </div>
             
             <a href="#" class="flex flex-col items-center text-black hover:text-violet-blue">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5" />
-                  </svg>                  
+                </svg>                  
                 <span class="text-sm">Notificaciones</span>
             </a>
             <div onclick="location.href='profile.html';" class="flex flex-col items-center text-black hover:text-violet-blue" style="cursor: pointer;">
@@ -83,12 +55,6 @@
         </div>
     </nav>
 
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
-<script src="../Controllers/firebaseConfig.js""></script>
-<script src="../Controllers/card.js"></script>
+    <script src="../Controllers/info.js"></script>
 </body>
 </html>

@@ -23,7 +23,9 @@ module.exports = {
         "light-lavender": "#d1fae5",
         "dark-gray-blue": "hsl(224, 30%, 27%)",
         "cream": '#f7f4e9',
-        "rtca": "#0284c7"
+        "rtca": "#cfd8dc",
+        "rtcb": "#059669",
+        "rtcc": "#047857"
 
       }
 
