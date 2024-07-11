@@ -8,3 +8,17 @@
      stroke: #115e59;
      /* Azul (blue-600) */
  }
+
+ /* Añade tus estilos CSS aquí */
+
+ nav {
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     background-color: white;
+     box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+     /* Sombra para resaltar la barra */
+     z-index: 1000;
+     /* Asegura que la barra esté por encima del contenido */
+ }

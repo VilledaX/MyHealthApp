@@ -13,46 +13,49 @@
 </head>
 <body class="font-haken bg-gray-100">
 
-    <section class="w-[98%] max-w-md mx-auto bg-white shadow-2xl md:flex md:rounded-2xl md:max-w-4xl mb-16">
-        <article class="p-10 grid gap-6 md:w-full">
-            <h3 class="text-xl font-bold">Perfil</h3>
-            <form class="grid gap-6">
-                <div class="flex items-center space-x-6">
-                    <div class="shrink-0">
-                        <img class="h-16 w-16 object-cover rounded-full" src="../Assets/gatito.jpg" alt="Foto de perfil">
-                    </div>
-                    <label class="block">
-                        <span class="sr-only">Elegir foto de perfil</span>
-                        <input type="file" class="block w-full text-sm text-gray-500
-                            file:mr-4 file:py-2 file:px-4
-                            file:rounded-full file:border-0
-                            file:text-sm file:font-semibold
-                            file:bg-blue-50 file:text-blue-700
-                            hover:file:bg-blue-100" />
-                    </label>
-                </div>
-                <div>
-                    <label for="name" class="block text-sm font-medium text-gray-700">Nombre</label>
-                    <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
-                </div>
-                <div>
-                    <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
-                    <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
-                </div>
-                <div>
-                    <label for="password" class="block text-sm font-medium text-gray-700">Contraseña</label>
-                    <input type="password" id="password" name="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
-                </div>
-                <div>
-                    <label for="confirm-password" class="block text-sm font-medium text-gray-700">Confirmar Contraseña</label>
-                    <input type="password" id="confirm-password" name="confirm-password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
-                </div>
-                <div>
-                    <button type="submit" class="w-full py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Actualizar Perfil</button>
-                </div>
-            </form>
-        </article>
-    </section>
+    <div class=" bg-gray-50 flex justify-center items-center">
+        <div class="h-56 w-72 absolute flex justify-center items-center">
+          <img class="object-cover h-20 w-20 rounded-full"
+            src="../Assets/gatito.jpg" />
+        </div>
+  
+        <div class="h-56 mx-4 w-5/6 bg-light-slate-blue rounded-3xl shadow-md ">
+          <div class="h-1/2 w-full flex justify-between items-baseline px-3 py-5">
+            <h1 class="text-white">Perfil</h1>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+              />
+            </svg>
+          </div>
+  
+          <div class=" bg-white h-1/2 w-full rounded-3xl flex flex-col justify-around items-center">
+            <div class="w-full h-1/2 flex justify-between items-center px-3 pt-2">
+              <div class="flex flex-col justify-center items-center">
+                <h1 class="text-gray-500 text-xs">Orders</h1>
+                <h1 class="text-gray-600 text-sm">340</h1>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <h1 class="text-gray-500 text-xs">Spent</h1>
+                <h1 class="text-gray-600 text-sm">$2,004</h1>
+              </div>
+            </div>
+            <div class="w-full h-1/2 flex flex-col justify-center items-center">
+              <h1 class="text-gray-700 font-bold">Villedita</h1>
+              <h1 class="text-gray-500 text-sm">Reynosa, Tamps</h1>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <nav class="fixed bottom-0 left-0 w-full bg-white shadow-md md:hidden">
         <div class="max-w-md mx-auto flex justify-around py-2">
@@ -63,7 +66,7 @@
                 <span class="text-sm">Inicio</span>
             </div>
 
-            <div onclick="location.href= 'articles.html';" class="flex flex-col items-center text-black hover:text-violet-blue">
+            <div onclick="location.href= 'article.html';" class="flex flex-col items-center text-black hover:text-violet-blue">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
                   </svg>                                   
